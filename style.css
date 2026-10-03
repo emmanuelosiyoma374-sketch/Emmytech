@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* MAIN SECTIONS */
+section {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 45px 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+    padding: 70px 25px;
+}
+
+#home h2 {
+    font-size: 36px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+}
+
+/* SERVICES */
+#services div {
+    border: 1px solid #e5e7eb;
+    padding: 22px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+#services h3 {
+    margin-bottom: 8px;
+}
+
+/* BUTTONS */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* CONTACT */
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* PHONE SCREEN */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    section {
+        margin: 18px 10px;
+        padding: 30px 18px;
+    }
+
+    #home h2 {
+        font-size: 29px;
+    }
+
+    button {
+        width: 90%;
+        margin: 6px auto;
+    }
+}
+/* APP-STYLE MOBILE DESIGN */
+
+body {
+    padding-bottom: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    padding: 8px 10px;
+}
+
+section {
+    width: calc(100% - 20px);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    nav a {
+        flex-shrink: 0;
+    }
+
+    section {
+        width: calc(100% - 20px);
+    }
+}
