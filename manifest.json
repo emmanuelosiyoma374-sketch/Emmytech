@@ -1,7 +1,7 @@
 {
   "name": "Emmatech",
   "short_name": "Emmatech",
-  "start_url": "./index.html",
+"start_url": "/emmytech/",
   "display": "standalone",
   "background_color": "#f5f7fb",
   "theme_color": "#0f172a",
